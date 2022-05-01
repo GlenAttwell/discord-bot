@@ -1,0 +1,17 @@
+{
+  "name": "discord-bot",
+  "version": "0.0.1",
+  "description": "A bot to get the current loadshedding status",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "node index.js",
+    "start": "docker run -d -w /app -v \"$(pwd):/app\" node:16 sh -c \"npm install && npm run dev\""
+  },
+  "author": "Glen Attwell",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "eskom-loadshedding-api": "^0.1.5"
+  }
+}
